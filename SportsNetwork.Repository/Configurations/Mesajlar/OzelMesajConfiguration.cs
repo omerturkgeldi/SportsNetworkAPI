@@ -20,8 +20,8 @@ namespace SportsNetwork.Repository.Configurations.Mesajlar
             builder.Property(x => x.Kullanici1Fk).IsRequired();
             builder.Property(x => x.Kullanici2Fk).IsRequired();
 
-            builder.HasOne(x => x.Kullanici1).WithMany(x => x.OzelMesajlar).HasForeignKey(x => x.Kullanici1Fk);
-            builder.HasOne(x => x.Kullanici2).WithMany(x => x.OzelMesajlar).HasForeignKey(x => x.Kullanici2Fk);
+            //builder.HasOne(x => x.Kullanici1).WithMany(x => x.OzelMesajlar).HasForeignKey(x => x.Kullanici1Fk);
+            //builder.HasOne(x => x.Kullanici2).WithMany(x => x.OzelMesajlar).HasForeignKey(x => x.Kullanici2Fk);
 
 
             builder.ToTable("ozel_mesajlar");

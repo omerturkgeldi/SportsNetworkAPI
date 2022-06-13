@@ -41,18 +41,18 @@ namespace SportsNetwork.Core.Models
         public ICollection<Grup> Gruplar { get; set; }
         public ICollection<GrupKullanici> GrupKullanicilar { get; set; }
 
-        public ICollection<Iliski> Iliskiler { get; set; }
+        //public ICollection<Iliski> Iliskiler { get; set; }
 
 
         public ICollection<GrupMesaj> GrupMesajlar { get; set; }
-        public ICollection<OzelMesaj> OzelMesajlar { get; set; }
+        //public ICollection<OzelMesaj> OzelMesajlar { get; set; }
 
         public ICollection<Tesis> Tesisler { get; set; }
         public ICollection<TesisRezervasyon> TesisRezervasyonlar { get; set; }
         public ICollection<TesisYorum> TesisYorumlar { get; set; }
         public ICollection<TesisYorumBegeni> TesisYorumBegeniler { get; set; }
 
-        public ICollection<Puanlama> Puanlamalar { get; set; }
+        //public ICollection<Puanlama> Puanlamalar { get; set; }
         public ICollection<Sonuc> Sonuclar { get; set; }
 
 

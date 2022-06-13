@@ -21,8 +21,8 @@ namespace SportsNetwork.Repository.Configurations.Iliskiler
             builder.Property(x => x.Kullanici2Fk).IsRequired();
 
             builder.HasOne(x => x.IliskiStatu).WithMany(x => x.Iliskiler).HasForeignKey(x => x.IliskiStatuFk);
-            builder.HasOne(x => x.Kullanici1).WithMany(x => x.Iliskiler).HasForeignKey(x => x.Kullanici1Fk);
-            builder.HasOne(x => x.Kullanici2).WithMany(x => x.Iliskiler).HasForeignKey(x => x.Kullanici2Fk);
+            //builder.HasOne(x => x.Kullanici1).WithMany(x => x.Iliskiler).HasForeignKey(x => x.Kullanici1Fk);
+            //builder.HasOne(x => x.Kullanici2).WithMany(x => x.Iliskiler).HasForeignKey(x => x.Kullanici2Fk);
 
 
             builder.ToTable("iliskiler");
