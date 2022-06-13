@@ -14,6 +14,8 @@ namespace SportsNetwork.Service.Services
     public class EtkinlikService : Service<Etkinlik>, IEtkinlikService
     {
         private readonly IEtkinlikRepository _etkinlikRepository;
+        private readonly IMapper _mapper;
+
         public EtkinlikService(IGenericRepository<Etkinlik> repository, IUnitOfWork unitOfWork, IMapper mapper, IEtkinlikRepository etkinlikRepository) : base(repository, unitOfWork, mapper)
         {
             _mapper = mapper;
